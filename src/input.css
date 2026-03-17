@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Fraunces 72pt";
+  src:
+    url("../src/fonts/Fraunces72pt-Black.woff2") format("woff2"),
+    url("../src/fonts/Fraunces72pt-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fraunces 72pt";
+  src:
+    url("../src/fonts/Fraunces72pt-Bold.woff2") format("woff2"),
+    url("../src/fonts/Fraunces72pt-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fraunces 72pt";
+  src:
+    url("./fonts/Fraunces72pt-Regular.woff2") format("woff2"),
+    url("./fonts/Fraunces72pt-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Fraunces 72pt" san-serif;
+}
+
+.hero__wrapper {
+  background-image: url(../src/images/hero/hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
