@@ -33,16 +33,3 @@
 body {
   font-family: "Fraunces 72pt" san-serif;
 }
-
-.hero__wrapper {
-  background-image: url(../src/images/hero/hero-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-@layer components {
-  .container {
-    @apply mx-auto px-5;
-  }
-}

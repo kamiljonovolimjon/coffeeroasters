@@ -1,86 +1,199 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./output.css" />
-  </head>
-  <body>
-    <header class="py-11">
-      <div class="container max-w-330 px-5 mx-auto flex justify-between">
-        <a
-          href="/"
-          class="header__left transition hover:opacity-70 active:opacity-40"
-        >
-          <img
-            src="./images/header/site-logo.svg"
-            width="236"
-            height="26"
-            alt="Site Logo"
-          />
-        </a>
+</head>
 
-        <ul class="header__right max-w-[305px] w-[100%] gap-8 flex">
-          <li
-            class="font-bold text-xs leading-4 tracking-[1px] uppercase text-[#83888F]"
-          >
-            <a
-              class="transition hover:opacity-70 active:text-[#333D4B]"
-              href="#"
-              >HOME</a
-            >
-          </li>
-          <li
-            class="font-bold text-xs leading-4 tracking-[1px] uppercase text-[#83888F]"
-          >
-            <a
-              class="transition hover:opacity-70 active:text-[#333D4B]"
-              href="#"
-              >ABOUT US</a
-            >
-          </li>
-          <li
-            class="font-bold text-xs leading-4 tracking-[1px] uppercase text-[#83888F]"
-          >
-            <a
-              class="transition hover:opacity-70 active:text-[#333D4B]"
-              href="#"
-              >Create your plan</a
-            >
-          </li>
-        </ul>
-      </div>
+<body class="bg-[#FEFCF7]">
+    <header class="py-11">
+        <div class="container max-w-330 px-5 mx-auto flex justify-between items-center">
+            <a href="/src/index.html" class="header__left transition hover:opacity-70 active:opacity-40">
+                <img src="./images/header/site-logo.svg" width="236" height="26" alt="Site Logo" title="Site Logo" />
+            </a>
+
+            <ul class="header__right max-w-[305px] w-full gap-8 hidden sm:block sm:flex items-center">
+                <li title="Home page" class="font-bold text-xs leading-4 tracking-[1px] uppercase text-[#83888F]">
+                    <a class="transition hover:opacity-70 active:text-[#333D4B]" href="#">HOME</a>
+                </li>
+                <li title="About us page" class="font-bold text-xs leading-4 tracking-[1px] uppercase text-[#83888F]">
+                    <a class="transition hover:opacity-70 active:text-[#333D4B]" href="#">ABOUT US</a>
+                </li>
+                <li title="Create page" class="font-bold text-xs leading-4 tracking-[1px] uppercase text-[#83888F]">
+                    <a class="transition hover:opacity-70 active:text-[#333D4B]" href="#">Create your plan</a>
+                </li>
+            </ul>
+
+            <button class="sm:hidden bg-transparent hover:opacity-70 active:opacity-40">
+                <img src="./images/header/burger-menu.svg" alt="Menu">
+            </button>
+        </div>
     </header>
 
     <main>
-      <section class="hero mb-[68px]">
-        <div class="container hero__container max-w-330 w-100% px-5 mx-auto">
-          <div class="hero__wrapper rounded-[10px]">
-            <div class="pl-[85px] pt-[117px] pb-[116px]">
-              <h2
-                class="max-w-[493px] font-black text-[#FEFCF7] text-7xl leading-18 mb-8"
-              >
-                Great coffee made simple.
-              </h2>
-              <p class="max-w-[445px] text-[#FEFCF7] text-base leading-4 mb-14">
-                Start your mornings with the world’s best coffees. Try our
-                expertly curated artisan coffees from our best roasters
-                delivered directly to your door, at your schedule.
-              </p>
-              <button
-                class="max-w-[217px] w-[100%] rounded-[6px] px-[31px] py-[15px] cursor-pointer bg-[#0E8784] font-black text-[#FEFCF7] text-lg leading-[25px] transition hover:bg-[#66D2CF] active:bg-[#29a39f]"
-              >
-                Create your plan
-              </button>
+        <section class="hero pb-15 sm:pb-[68px]">
+            <div class="container hero__container max-w-330 w-full px-5 mx-auto">
+                <div class="bg-[url(images/hero/hero-bg.png)] bg-no-repeat bg-cover bg-center rounded-[10px]">
+                    <div
+                        class="sm:pl-[85px] flex flex-col text-center sm:text-left py-25 sm:pt-[117px] sm:pb-[116px] px-6">
+                        <h2
+                            class=" text-[40px] leading-10 mx-auto sm:mx-0 sm:max-w-[329px] sm:text-5xl sm:leading-12 mb-6 md:max-w-[493px] md:text-7xl md:leading-18 md:mb-8 font-black text-[#FEFCF7]">
+                            Great coffee made simple.
+                        </h2>
+                        <p
+                            class="sm:max-w-99.5 md:max-w-[445px] w-full opacity-80 text-[#FEFCF7] text-[15px] md:text-base sm:leading-[25px] md:leading-6.5 mb-10 md:mb-14">
+                            Start your mornings with the world’s best coffees. Try our
+                            expertly curated artisan coffees from our best roasters
+                            delivered directly to your door, at your schedule.
+                        </p>
+                        <button title="Create page"
+                            class="max-w-[217px] w-full mx-auto sm:mx-0 rounded-md px-[31px] py-[15px] cursor-pointer bg-[#0E8784] font-black text-[#FEFCF7] text-lg leading-[25px] transition hover:bg-[#66D2CF] active:bg-[#29a39f]">
+                            Create your plan
+                        </button>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="collection mt-[68px]">
-        <div class="container"></div>
-      </section>
+        <section class="collection pt-15 sm:pt-[68px] pb-15 sm:pb-25">
+            <div class="container max-w-[1151px] w-full px-5 mx-auto sm:pt-[59px] md:pt-[126px] sm:relative">
+                <img class="sm:absolute sm:top-0 left-auto right-auto sm:-z-1 max-w-160 sm:max-w-[689px] md:max-w-277.5 w-full"
+                    src="./images/collection/collection-bg.png" alt="Our Collection" />
+
+                <ul class="mx-auto grid grid-cols-1 md:grid-cols-4 justify-between text-center gap-[30px]">
+
+                    <li
+                        class="max-w-full sm:max-w-[573px] md:max-w-[255px] sm:flex sm:flex-row md:flex-col sm:mx-auto md:mx-0 items-center justify-between w-full text-center md:text-center">
+                        <img class="mx-auto sm:mx-0 mb-6 md:mb-19" src="./images/collection/gran-espresso.png"
+                            width="255" height="193" alt="Gran Espresso" title="Gran Espresso" />
+                        <div class="sm:text-left max-w-[282px] md:max-w-[255px] mx-auto">
+                            <h3 class="mb-4 md:mb-6 font-black text-2xl leading-6 md:leading-8 text-[#333D4B]">
+                                Gran Espresso
+                            </h3>
+                            <p class="font-normal text-base leading-6.5 text-[#333D4B]">
+                                Light and flavorful blend with cocoa and black pepper for an
+                                intense experience.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li
+                        class="max-w-full sm:max-w-[573px] md:max-w-[255px] sm:flex sm:flex-row md:flex-col sm:mx-auto md:mx-0 items-center justify-between w-full text-center md:text-center">
+                        <img class="mx-auto sm:mx-0 mb-6 md:mb-19" src="./images/collection/planalto.png" width="255"
+                            height="193" alt="Planalto" title="Planalto" />
+                        <div class="sm:text-left max-w-[282px] md:max-w-[255px] mx-auto">
+                            <h3 class="mb-4 md:mb-6 font-black text-2xl leading-6 md:leading-8 text-[#333D4B]">
+                                Planalto
+                            </h3>
+                            <p class="font-normal text-base leading-6.5 text-[#333D4B]">
+                                Brazilian dark roast with rich and velvety body, and hints of
+                                fruits and nuts.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li
+                        class="max-w-full sm:max-w-[573px] md:max-w-[255px] sm:flex sm:flex-row md:flex-col sm:mx-auto md:mx-0 items-center justify-between w-full text-center md:text-center">
+                        <img class="mx-auto sm:mx-0 mb-6 md:mb-19" src="./images/collection/piccollo.png" width="255"
+                            height="193" alt="Piccollo" title="Piccollo" />
+                        <div class="sm:text-left max-w-[282px] md:max-w-[255px] mx-auto">
+                            <h3 class="mb-4 md:mb-6 font-black text-2xl leading-6 md:leading-8 text-[#333D4B]">
+                                Piccollo
+                            </h3>
+                            <p class="font-normal text-base leading-6.5 text-[#333D4B]">
+                                Mild and smooth blend featuring notes of toasted almond and
+                                dried cherry.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li
+                        class="max-w-full sm:max-w-[573px] md:max-w-[255px] sm:flex sm:flex-row md:flex-col sm:mx-auto md:mx-0 items-center justify-between w-full text-center md:text-center">
+                        <img class="mx-auto sm:mx-0 mb-6 md:mb-19" src="./images/collection/danche.png" width="255"
+                            height="193" alt="Danche" title="Danche" />
+                        <div class="sm:text-left max-w-[282px] md:max-w-[255px] mx-auto">
+                            <h3 class="mb-4 md:mb-6 font-black text-2xl leading-6 md:leading-8 text-[#333D4B]">
+                                Danche
+                            </h3>
+                            <p class="font-normal text-base leading-6.5 text-[#333D4B]">
+                                Ethiopian hand-harvested blend densely packed with vibrant
+                                fruit notes.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="choose py-25">
+            <div class="container max-w-330 w-full mx-auto px-5 pt-25 bg-[#2C343E] rounded-[10px] pb-[317px] relative">
+
+                <div class="max-w-135 w-full mx-auto text-center text-[#FEFCF7]">
+                    <h2 class="font-black text-[40px] leading-12 mb-8">Why choose us?</h2>
+                    <p class="font-normal text-base leading-6 opacity-80">A large part of our role is choosing which
+                        particular
+                        coffees will be featured in our range. This means working closely with the best coffee growers
+                        to give you a more impactful experience on every level.</p>
+                </div>
+
+                <ul class="m absolute -bottom-47.5 grid grid-cols-3 gap-7.5 ">
+
+                    <li
+                        class="flex flex-col items-center justify-center text-center px-12 pt-18  bg-[#0E8784] rounded-lg">
+                        <img class="mb-14" src="./images/choose/coffee-bean.svg" width="72" height="72"
+                            alt="Coffee Bean">
+                        <div class="max-w-[255px] w-full pb-12">
+                            <h3 class="font-black text-2xl leading-8 mb-6 text-[#FEFCF7]">Best quality</h3>
+                            <p class="font-normal text-base leading-6.5 text-[#FEFCF7]">Discover an endless variety of
+                                the world’s best
+                                artisan coffee from each of our
+                                roasters.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li
+                        class="flex flex-col items-center justify-center text-center px-12 pt-18  bg-[#0E8784] rounded-lg">
+                        <img class="mb-14" src="./images/choose/coffee-bean.svg" width="72" height="72"
+                            alt="Coffee Bean">
+                        <div class="max-w-[255px] w-full pb-12">
+                            <h3 class="font-black text-2xl leading-8 mb-6 text-[#FEFCF7]">Best quality</h3>
+                            <p class="font-normal text-base leading-6.5 text-[#FEFCF7]">Discover an endless variety of
+                                the world’s best
+                                artisan coffee from each of our
+                                roasters.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li
+                        class="flex flex-col items-center justify-center text-center px-12 pt-18  bg-[#0E8784] rounded-lg">
+                        <img class="mb-14" src="./images/choose/coffee-bean.svg" width="72" height="72"
+                            alt="Coffee Bean">
+                        <div class="max-w-[255px] w-full pb-12">
+                            <h3 class="font-black text-2xl leading-8 mb-6 text-[#FEFCF7]">Best quality</h3>
+                            <p class="font-normal text-base leading-6.5 text-[#FEFCF7]">Discover an endless variety of
+                                the world’s best
+                                artisan coffee from each of our
+                                roasters.
+                            </p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        <section class="py-25">
+            <div class="contaier max-w[1320px] w-full px-5 mx-auto">
+
+            </div>
+        </section>
+
     </main>
-  </body>
+</body>
+
 </html>
